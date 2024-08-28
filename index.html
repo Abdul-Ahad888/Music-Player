@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div id="loader-container">
+        <div class="loader"></div>
+        <h3 style="color: white;">Dont Worry! It Takes a Little While To Load Songs</h3>
+    </div>
+
+    <div class="container">
+        <div class="card">
+
+            <div class="menu-container">
+                <i class="menu-icon fa fa-bars"></i>
+            </div>
+
+            <div class="menu">
+                <div class="playlist">
+                    <!-- Content Will Be Shown Dynamically From Script.js -->
+                </div>
+            </div>
+
+            <div id="songContainer">
+                <!-- Content Will Be Shown Dynamically From Script.js -->
+            </div>
+
+            <div class="func-btn">
+
+                <div class="no-btn">
+                    <i></i>
+                </div>
+
+                <div class="prev-btn">
+                    <i class="fa fa-backward-step"></i>
+                </div>
+
+                <div class="play-btn" onclick="playPause()">
+                    <i id="ctrlIcon" class="fa-solid fa-play"></i>
+                </div>
+
+                <div class="next-btn">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+
+                <div class="volume-btn">
+                    <i class="volume-icon fa-solid fa-volume-high"></i>
+                    <div class="vol">
+                        <span class="volume-input">100</span>
+                        <input type="range" min="0" max="1" step="0.01">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</div>
+
+    <script src="https://kit.fontawesome.com/ef3a02a236.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
